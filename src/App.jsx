@@ -18,10 +18,10 @@ function App() {
             <div className='lg:w-9/12 md:w-9/12 w-8/12 px-6 grow'>
               <BrowserRouter>
                 <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/bot" element={<ChatBot />} />
-                  <Route path="/chatting" element={<Chatting />} />
-                  <Route path="/profile" element={<Profile />} />
+                  <Route path="/chatbot" element={<Home />} />
+                  <Route path="/chatbot/bot" element={<ChatBot />} />
+                  <Route path="/chatbot/chatting" element={<Chatting />} />
+                  <Route path="/chatbot/profile" element={<Profile />} />
                 </Routes>
               </BrowserRouter>
             </div>
