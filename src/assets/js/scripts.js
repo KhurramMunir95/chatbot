@@ -4,7 +4,7 @@ $(function() {
         loop: true,
         margin: 10,
         items: 1,
-        navText: ['<img src="/src/assets/media/icons/arrow.svg" alt="">', '<img src="/src/assets/media/icons/arrow.svg" alt="">'],
+        navText: ['<img src="/chatbot/src/assets/media/icons/arrow.svg" alt="">', '<img src="/chatbot/src/assets/media/icons/arrow.svg" alt="">'],
         nav: true,
         dots: false,
     })
