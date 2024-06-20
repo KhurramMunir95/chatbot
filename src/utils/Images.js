@@ -51,6 +51,11 @@ import share2 from "../assets/media/icons/share-2.svg";
 import copy from "../assets/media/icons/copy.svg";
 import zoom from "../assets/media/icons/zoom.svg";
 import sendMessage from "../assets/media/icons/send-message.svg";
+import calude2 from "../assets/media/icons/claude.svg";
+import gpt from "../assets/media/icons/gpt.svg";
+import gpt4Icon from "../assets/media/icons/gpt-4.svg";
+import googleGemini from "../assets/media/icons/gemini.svg";
+import following from "../assets/media/icons/following.svg";
 
 // game corusel images
 import game1 from '../assets/media/images/game-1.svg';
@@ -140,5 +145,10 @@ export {
     share2,
     copy,
     client4,
-    zoom
+    zoom,
+    calude2,
+    gpt,
+    gpt4Icon,
+    googleGemini,
+    following,
 };

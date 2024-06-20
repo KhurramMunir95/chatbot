@@ -152,6 +152,10 @@ p {
 	font-family: "Inter", sans-serif;
 }
 
+.text-grey {
+	color: #8D8D91;
+}
+
 
 /* scrollUp */
 .back-to-top {
@@ -569,12 +573,15 @@ p {
 	transition: .4s;
 	height: 375px;
 	position: relative;
+	margin-right: 20px;
+    margin-bottom: 20px;
 }
 .chat-bot-items .chat-bot-img > img {
     width: 100%;
     border-radius: 12px;
     transition: .4s;
     height: 260px;
+	object-fit: cover;
 }
   .chat-bot-items h5 {
 	font-size: 20px;
@@ -2073,7 +2080,7 @@ p {
 /* messeing page */
 
 .messege-title {
-	padding-top: 50px;
+	padding-top: 35px;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
 	border-bottom: 1px solid #26262F;
@@ -2083,7 +2090,6 @@ p {
 	color: #fff;
 	font-size: 36px;
 	margin: 0;
-	display: inline-block;
   }
   .messege-title h3 > img {
 	margin-right: 15px;
@@ -2212,7 +2218,6 @@ p {
   }
   .messege-btn-link a:first-child {
 	background: #fff;
-	display: inline-block;
 	width: 170px;
 	height: 50px;
 	line-height: 50px;
@@ -2275,11 +2280,11 @@ p {
 	font-size: 16px;
 	color: #fff;
 	text-align: left;
-	padding-left: 65px;
+	padding-left: 60px;
 	width: 100%;
   }
   .messege-profile-select button img:first-child {
-	width: 42px;
+	width: 40px;
 	position: absolute;
 	left: 5px;
 	top: 50%;

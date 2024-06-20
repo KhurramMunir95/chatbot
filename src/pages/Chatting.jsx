@@ -1,12 +1,12 @@
 import React from 'react';
-import  { chevronRightBig, pencil, share2, copy, client4, zoom, sendMessage, luffyModal, client2, client1 } from '../utils/Images';
+import  { chevronRightBig, pencil, share2, share, copy, client4, zoom, sendMessage, luffyModal, client2, client1, following, gpt } from '../utils/Images';
 
 const Chatting = () => {
   return (
     <div className="flex flex-wrap">
       <div className="xl:w-8/12 lg:w-7/12">
-        <div className="messege-title">
-          <h3>
+        <div className="messege-title flex items-center justify-between">
+          <h3 className='flex'>
             <img src={chevronRightBig} alt="" />Your chat with Luffy
           </h3>
           <a href="#">
@@ -14,7 +14,7 @@ const Chatting = () => {
           </a>
         </div>
         <div className="messege-boxx">
-          <div className="messege-wrapper mb-20">
+          <div className="messege-wrapper mb-4">
             <a href="#">
               <img src={client4} className='rounded-full' alt="" />
             </a>
@@ -42,7 +42,7 @@ const Chatting = () => {
               </div>
             </div>
           </div>
-          <div className="messege-wrapper mb-20">
+          <div className="messege-wrapper mb-4">
             <a href="#">
               <img src={client2} className='rounded-full' alt="" />
             </a>
@@ -67,7 +67,7 @@ const Chatting = () => {
               </div>
             </div>
           </div>
-          <div className="messege-wrapper mb-20">
+          <div className="messege-wrapper mb-4">
             <a href="#">
               <img src={client1} className='rounded-full' alt="" />
             </a>
@@ -103,17 +103,17 @@ const Chatting = () => {
       </div>
       <div className="xl:w-4/12 lg:w-5/12">
         <div className="messege-big-img">
-          <img src={luffyModal} alt="" />
+          <img src={luffyModal} className='rounded-2xl' alt="" />
         </div>
-        <div className="messege-btn">
+        <div className="messege-btn flex items-center justify-between">
           <h4>Luffy</h4>
-          <div className="messege-btn-link">
-            <a href="#">
-              <img src="assets/img/user.svg" alt="" />
+          <div className="messege-btn-link flex items-center">
+            <a href="#" className='flex items-center justify-center'>
+              <img src={following} alt="" />
               Following
             </a>
             <a href="#">
-              <img src="assets/img/share.svg" alt="" />
+              <img src={share} alt="" />
             </a>
           </div>
         </div>
@@ -134,8 +134,9 @@ const Chatting = () => {
           </p>
 
           <div className="messege-profile-select">
+            <h6 className='text-white mb-4'>Model Settings:</h6>
             <button className="-messegeclick-select dropdown_toogler">
-              <img src="assets/img/select-img1.png" alt="" />
+              <img src={gpt} alt="" />
               ChatGPT <img src="assets/img/angle-down.svg" alt="" />
             </button>
 
