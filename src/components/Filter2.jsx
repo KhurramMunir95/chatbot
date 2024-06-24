@@ -1,5 +1,5 @@
 import React from 'react';
-import { filter, refresh, robot1, glowingStar, fairy, wavingHand, videoGame, rocket } from '../utils/Images';
+import { filter, refresh, robot1, glowingStar, fairy, wavingHand, videoGame, rocket, close } from '../utils/Images';
 
 const Filter2 = () => {
   return (
@@ -20,6 +20,69 @@ const Filter2 = () => {
                 <button className="click-here-filter">
                     <img src={filter} alt="Filters" /> Filters
                 </button>
+            </div>
+        </div>
+        <div className="explore-filter-box">
+            <div className="explore-filter-content">
+                <button className="filter-close-btn flex items-center">Clear All <img src={close} alt=""/></button>
+                <h3>Filters</h3>
+                <div className="filter-short mb-4">
+                    <h5>Sorting</h5>
+                    <ul>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">New</a></li>
+                    </ul>
+                </div>
+                <div className="filter-short-btn-box mb-15">
+                    <h4>Type</h4>
+                    <ul>
+                        <li><a href="#">Famous people</a></li>
+                        <li><a href="#">Movie&amp;TV</a></li>
+                        <li><a href="#">Anime</a></li>
+                        <li><a href="#">Game</a></li>
+                        <li><a href="#">Original character</a></li>
+                    </ul>
+                </div>
+                <div className="filter-short-btn-box mb-15">
+                    <h4>Gender</h4>
+                    <ul>
+                        <li><a href="#">Male</a></li>
+                        <li><a href="#">Female</a></li>
+                        <li><a href="#">Non-Binary</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                </div>
+                <div className="filter-short-btn-box mb-15">
+                    <h4>Occupation</h4>
+                    <ul>
+                        <li><a href="#">Teacher</a></li>
+                        <li><a href="#">Doctor</a></li>
+                        <li><a href="#">Professor</a></li>
+                        <li><a href="#">Coach</a></li>
+                        <li><a href="#">Student</a></li>
+                        <li><a href="#">Police</a></li>
+                        <li><a href="#">Agent</a></li>
+                        <li><a href="#">Soldier</a></li>
+                    </ul>
+                </div>
+                <div className="filter-short-btn-box mb-15">
+                    <h4>Relationship</h4>
+                    <ul>
+                        <li><a href="#">Mother/Father</a></li>
+                        <li><a href="#">Sister/Brother</a></li>
+                        <li><a href="#">Stepmother/Stepfather</a></li>
+                    </ul>
+                </div>
+                <div className="filter-short-btn-box">
+                    <h4>Race</h4>
+                    <ul>
+                        <li><a href="#">Human</a></li>
+                        <li><a href="#">Demon</a></li>
+                        <li><a href="#">Vampire</a></li>
+                        <li><a href="#">Succubus</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

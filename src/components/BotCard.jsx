@@ -1,17 +1,11 @@
 import React from 'react';
-import { 
-    robot,
-    gpt4,
-    gemini,
-    claude,
-    gptDark,
-    novel,
+import {
     plus2,
     rating,
     comment
 } from '../utils/Images';
 
-const BotCard = () => {
+const BotCard = ({ image, title }) => {
   return (
     <div className="chat-bot-items">
         <div className="chat-bot-hover">
@@ -19,9 +13,9 @@ const BotCard = () => {
             <a href="#"><img src={plus2} alt="Add" /></a>
         </div>
         <div className="chat-bot-img">
-            <img src={gpt4} alt="Chat Bot" />
+            <img src={image} alt="Chat Bot" />
         </div>
-        <h5>AskPandia Assistant</h5>
+        <h5>{title}</h5>
         <div className="chat-bot-rating">
             <a href="#"><img src={rating} alt="Rating" />4.9 Rating</a>
             <span>.</span>

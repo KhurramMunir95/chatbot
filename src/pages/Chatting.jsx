@@ -1,10 +1,10 @@
 import React from 'react';
-import  { chevronRightBig, pencil, share2, share, copy, client4, zoom, sendMessage, luffyModal, client2, client1, following, gpt } from '../utils/Images';
+import  { chevronRightBig, pencil, share2, share, copy, client4, zoom, sendMessage, luffyModal, client2, client1, following, gpt, chevronDown, googleGemini, claude2, gpt4Icon } from '../utils/Images';
 
 const Chatting = () => {
   return (
     <div className="flex flex-wrap">
-      <div className="xl:w-8/12 lg:w-7/12">
+      <div className="xl:w-8/12 lg:w-7/12 px-0 lg:px-5">
         <div className="messege-title flex items-center justify-between">
           <h3 className='flex'>
             <img src={chevronRightBig} alt="" />Your chat with Luffy
@@ -105,7 +105,7 @@ const Chatting = () => {
         <div className="messege-big-img">
           <img src={luffyModal} className='rounded-2xl' alt="" />
         </div>
-        <div className="messege-btn flex items-center justify-between">
+        <div className="messege-btn flex items-start sm:items-center justify-between">
           <h4>Luffy</h4>
           <div className="messege-btn-link flex items-center">
             <a href="#" className='flex items-center justify-center'>
@@ -137,32 +137,32 @@ const Chatting = () => {
             <h6 className='text-white mb-4'>Model Settings:</h6>
             <button className="-messegeclick-select dropdown_toogler">
               <img src={gpt} alt="" />
-              ChatGPT <img src="assets/img/angle-down.svg" alt="" />
+              ChatGPT <img src={chevronDown} alt="" />
             </button>
 
             <div className="open-select-menu">
               <ul>
                 <li>
                   <a href="#">
-                    <img src="assets/img/select-img1.png" alt="" />
+                    <img src={gpt} alt="" />
                     ChatGPT
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/img/select-img2.png" alt="" />
+                    <img src={gpt4Icon} alt="" />
                     GPT-4 Turbo
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/img/select-img3.png" alt="" />
+                    <img src={googleGemini} alt="" />
                     Google Gemini
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/img/select-img4.png" alt="" />
+                    <img src={claude2} alt="" />
                     Claude V2
                   </a>
                 </li>

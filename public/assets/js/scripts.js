@@ -4,7 +4,7 @@ $(function() {
         loop: true,
         margin: 10,
         items: 1,
-        navText: ['<img src="/chatbot/src/assets/media/icons/arrow.svg" alt="">', '<img src="/chatbot/src/assets/media/icons/arrow.svg" alt="">'],
+        navText: ['<img src="/chatbot/assets/media/icons/arrow.svg" alt="">', '<img src="/chatbot/assets/media/icons/arrow.svg" alt="">'],
         nav: true,
         dots: false,
     })
@@ -81,9 +81,9 @@ $(function() {
 	$(dropdwonToggler).on('click', function (e) {
 		$(dropdwonToggler).removeClass('active');
 		$(dropdwonToggler).next().removeClass('current');
-		$(this).addClass('active');
-		$(this).next().addClass('current');
-		$('.overly').addClass('current');
+		$(this).toggleClass('active');
+		$(this).next().toggleClass('current');
+		$('.overly').toggleClass('current');
         e.stopPropagation();
 	});
 
@@ -91,4 +91,12 @@ $(function() {
         $(dropdwonToggler).removeClass('active');
         $(dropdwonToggler).next().removeClass('current');
     });
+
+	$(".click-here-filter").on('click', function() {
+		$(".explore-filter-box").toggleClass('model-open');
+	}); 
+
+	$(".filter-close-btn").on('click', function(){
+		$(".explore-filter-box").removeClass('model-open');
+	});
 })

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/KhurramMunir95/chatbot",
+  "homepage": "https://sweet-kepler.161-97-115-110.plesk.page/chatbot/",
   "name": "chatbot",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.0",
     "gh-pages": "^6.1.1",
     "jquery": "^3.7.1",
     "react": "^18.2.0",

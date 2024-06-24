@@ -1,4 +1,9 @@
 /* pc */
+@media screen and (min-width: 1900px) {
+    .left-menu-area {
+        height: 125vh;
+    }
+}
 
 @media (max-width: 1800px) {
     .fix-width-menu {
@@ -30,9 +35,7 @@
     .col-lg-9.col-md-8.col-8.fix-width-both.create-page-wrapper {
         height: 1170px;
     }
-    .user-preview {
-        height: 1170px;
-    }
+
     .chat-box-filter.chat-box-filter-explore {
         width: 27%;
     }
@@ -75,6 +78,9 @@
         padding: 0 15%;
     }
 
+    .chat-bot-wrapp .flex > div:nth-child(4n) .chat-bot-items {
+        margin-right: 0 !important;
+    }
 }
 /* pc */
 @media (max-width: 1600px) {
@@ -120,10 +126,10 @@
     .profile-select {
         width: 100%;
     }
-    .open-select-menu ul li a img {
+    /* .open-select-menu ul li a img {
         width: 25px;
         margin-right: 8px;
-    }
+    } */
     .open-select-menu ul li a {
         font-size: 15px;
     }
@@ -133,13 +139,11 @@
     .col-lg-9.col-md-8.col-8.fix-width-both.create-page-wrapper {
         height: 1120px;
     }
-    .user-preview {
-        height: 1120px;
-    }
+  
     /* chatbot page */
-    .luffy-comment a {
+    /* .luffy-comment a {
         line-height: 50px;
-    }
+    } */
     .luffy-comment a:last-child img {
         width: 50px;
     }
@@ -187,9 +191,9 @@
     .messege-contenttt p {
         font-size: 14px;
     }
-    .messege-send-chatbot {
+    /* .messege-send-chatbot {
         margin-top: 263px;
-    }
+    } */
     .messege-btn-link a:first-child {
         width: 140px;
         height: 42px;
@@ -206,9 +210,9 @@
     .messege-contenttt a {
         font-size: 14px;
     }
-    .messege-send-chatbot {
+    /* .messege-send-chatbot {
         margin-top: 230px;
-    }
+    } */
 
     .messege-2-open-box .open-select-menu {
         right: 11%;
@@ -223,10 +227,40 @@
         width: 98%;
     }
 
+    /* .chat-bot-wrapp .flex > div:nth-child(3n) .chat-bot-items {
+        margin-right: 0px !important;
+    } */
 
 }
 /* Normal desktop :1200px. */
 @media (max-width: 1400px) {
+    .luffy-charecter-img {
+        width: 885px;
+        height: 550px;
+        top: 0;
+        transform: translateY(-80px) translateX(24px);
+    }
+
+    .luffy-folwer-section {
+        float: right;
+        width: 95%;
+        background: #1B1B23;
+        border-radius: 16px;
+        padding: 15px 25px;
+        padding-right: 15px;
+        z-index: 1;
+        position: relative;
+        margin-top: 420px;
+    }
+
+    .chat-bot-wrapp .flex > div:nth-child(3n) .chat-bot-items {
+        margin-right: 0 !important;
+    }
+
+    .chat-bot-wrapp .flex > div:nth-child(4n) .chat-bot-items {
+        margin-right: 20px !important;
+    }
+
     .user-items ul li {
         margin: 0 7px;
     }
@@ -323,9 +357,9 @@
     .open-select-menu ul li a {
         font-size: 14px;
     }
-    .open-select-menu ul li a img {
+    /* .open-select-menu ul li a img {
         width: 22px;
-    }
+    } */
     .profile-select > a {
         height: 47px;
         line-height: 47px;
@@ -336,21 +370,19 @@
     .col-lg-9.col-md-8.col-8.fix-width-both.create-page-wrapper {
         height: 1110px;
     }
-    .user-preview {
-        height: 1110px;
-    }
+ 
     /* chatbot page */
     .luffy-text h2 {
         font-size: 28px;
     }
     .luffy-comment a {
-        line-height: 45px;
+        /* line-height: 45px; */
         font-size: 18px;
     }
-    .luffy-comment a:nth-child(2) {
+    /* .luffy-comment a:nth-child(2) {
         margin: 0 15px;
         width: 150px;
-    }
+    } */
     .luffy-comment a:last-child {
         width: 45px;
     }
@@ -409,9 +441,9 @@
     .messege-send-chatbot input {
         height: 65px;
     }
-    .messege-send-chatbot {
+    /* .messege-send-chatbot {
         margin-top: 191px;
-    }
+    } */
 
     /* user page */
     .user-content {
@@ -559,9 +591,7 @@
     .chat-bg-img > img {
         height: 100%;
     }
-    .chat-bg-img {
-        height: 80px;
-    }
+
     .chat-list-box input {
         height: 45px;
         padding: 0 15px;
@@ -626,24 +656,24 @@
     }
    
     .luffy-comment a {
-        line-height: 40px;
+        /* line-height: 40px; */
         font-size: 16px;
     }
     .luffy-comment a img {
         width: 25px;
         margin-right: 5px;
     }
-    .luffy-comment a:nth-child(2) {
+    /* .luffy-comment a:nth-child(2) {
         margin: 0 15px;
         width: 110px;
-    }
+    } */
     .luffy-comment a:nth-child(2) img {
         width: 20px;
     }
-    /* .luffy-folwer-section {
-        width: 370px;
+    .luffy-folwer-section {
+        /* width: 370px; */
         margin-top: 375px;
-    } */
+    }
     /* .luffy-folwer-section ul li a img {
         width: 32px;
         margin-top: -27px;
@@ -721,9 +751,9 @@
         width: 120px;
         font-size: 14px;
     }
-    .messege-send-chatbot {
+    /* .messege-send-chatbot {
         margin-top: 50px;
-    }
+    } */
     
     /* user page */
     .user-followw ul li a {
@@ -787,7 +817,6 @@
     .messege-2-open-box .open-select-menu {
         right: 15%;
     }
-    
 }
 
  
@@ -945,12 +974,6 @@
     }
 
     /* create page */
-    .ceate-chat-bg.pt-85 {
-        padding-right: 30px;
-    }
-    .chat-bg-img {
-        height: 90px;
-    }
     .user-preview {
         padding: 20px 15px;
         height: 300px;
@@ -977,8 +1000,16 @@
         font-size: 14px;
     }
     .luffy-comment a {
-        margin-bottom: 10px;
+        width: 100%;
+        height: fit-content;
     }
+
+    .luffy-folwer-section {
+        float: none;
+        width: 100%;
+        margin-top: 0;
+    }
+
     /* .luffy-folwer-section {
         width: 93%;
         margin-top: -7px;
@@ -995,6 +1026,7 @@
         position: relative;
         margin-top: 30px;
         height: auto;
+        transform: translate(0px, 0px);
     }
     .luffy-text p {
         font-size: 14px;
@@ -1121,6 +1153,22 @@
         top: 107%;
     }
 
+    .share-modal .signup-img {
+        margin-bottom: 30px;
+    }
+
+    .chat-bot-wrapp .flex > div:nth-child(3n) .chat-bot-items,
+    .chat-bot-wrapp .flex > div:nth-child(4n) .chat-bot-items {
+        margin-right: 20px !important;
+    }
+
+    .chat-bot-wrapp .flex > div:nth-child(2n) .chat-bot-items {
+        margin-right: 0 !important;
+    }
+
+    .review-form {
+        height: 95%;
+    }
 }
 
  
@@ -1240,6 +1288,7 @@
     .chat-bot-items {
         padding: 15px;
         height: 278px;
+        margin-right: 0;
     }
     .chat-bot-hover a {
         font-size: 14px;
@@ -1421,6 +1470,19 @@
         margin-right: 4px;
     }
     /* create page */
+
+    .chat-bg-img {
+        height: 90px;
+    }
+
+    .ceate-chat-bg {
+        margin-top: 20px;
+    }
+
+    .user-preview {
+        transform: translateX(0px);
+    }
+
     .create-profile span {
         width: 184px;
     }
@@ -1431,10 +1493,7 @@
         width: 184px;
         margin: auto;
     }
-    .ceate-chat-bg.pt-85 {
-        padding-right: 15px;
-        padding-top: 30px;
-    }
+
     .user-send-messege input {
         height: 45px;
     }
@@ -1746,7 +1805,7 @@
         width: 13px;
     }
     .user-modal-profile a img {
-        width: 70px;
+        width: 100px;
     }
     .user-modal-input-1 label {
         font-size: 14px;
@@ -1771,7 +1830,7 @@
         padding: 0;
     }
     .modal-link-connect input.modal-input-width {
-        width: 255px !important;
+        width: 100% !important;
         margin-left: 0;
         margin-top: 15px;
     }
@@ -1803,15 +1862,19 @@
         right: 15px;
         bottom: 15px;
     }
+    .messege-boxx {
+        height: 470px;
+    }
+    
     .messege-boxx.messege-boxx-2 {
         padding: 0;
     }
     .messege-title.messege-title-2 {
         margin-bottom: 15px;
     }
-    .messege-boxx.messege-boxx-2 .messege-send-chatbot {
+    /* .messege-boxx.messege-boxx-2 .messege-send-chatbot {
         margin-top: 50px;
-    }
+    } */
     .chat-box-modal .modal-content {
         padding: 25px 15px;
     }
@@ -1822,14 +1885,36 @@
         margin: 7px 0;
         margin-right: 7px;
     }
+
+    .modal-link-connect input {
+        width: 100% !important;
+    }
    
+    .bordered-paragraph::after,
+    .bordered-paragraph::before {
+        width: 120px;
+    }
+
+    .chat-bot-wrapp .flex > div:nth-child(3n) .chat-bot-items,
+    .chat-bot-wrapp .flex > div:nth-child(4n) .chat-bot-items {
+        margin-right: 0 !important;
+    }
+
+    .review-form {
+        height: 180px;
+    }
+
+    .review-container .review-card {
+        margin-right: 0;
+    }
+
+    .review-container .review-form {
+        margin-right: 0;
+        margin-top: 20px;
+    }
 }
 @media (max-width: 380px) {
     .user-img a img {
         width: 60px !important;
     }
-}
-
-@media (max-width: 575.98px){
-    
 }

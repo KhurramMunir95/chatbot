@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import SigInModal from '../modals/SignInModal';
+import { Link } from 'react-router-dom';
 import { 
     logo, 
     mobLogo, 
@@ -17,10 +19,17 @@ import {
     settings, 
     logout,
     pin,
-    deleteIcon
+    deleteIcon,
+    followUser,
+    pencilWhite,
+    dummyUser,
+    chatbotSmall,
+    ellipsePlus
 } from '../utils/Images'
 
 const LeftMenu = () => {
+    const [open, setOpen] = useState(false);
+    
   return (
     <>
         <div className="left-menu-area">
@@ -32,22 +41,22 @@ const LeftMenu = () => {
                 <h5 className="hidden md:block">Main</h5>
                 <ul>
                     <li className="active">
-                        <a href="#" className="flex items-center justify-center sm:justify-start">
+                        <Link to='/chatbot' className="flex items-center justify-center sm:justify-start">
                             <img src={homeIcon} alt="Home Icon" />
                             <span>Home</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="flex items-center justify-center sm:justify-start">
-                            <img src={exploreIcon} alt="Explore Icon" />
+                        <Link to='/chatbot/search' className="flex items-center justify-center sm:justify-start">
+                            <img src={exploreIcon} alt="explore Icon" />
                             <span>Explore</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="flex items-center justify-center sm:justify-start">
-                            <img src={createIcon} alt="Create Icon" />
+                        <Link to='/chatbot/create' className="flex items-center justify-center sm:justify-start">
+                            <img src={createIcon} alt="create Icon" />
                             <span>Create</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -67,6 +76,15 @@ const LeftMenu = () => {
                     </div>
                 </h4>
                 <div className="user-slide-active owl-carousel owl-loaded owl-drag">
+                    <div className="user-items">
+                        <div className="user-img h-24">
+                            <a href="#"><img src={dummyUser} alt="User" /></a>
+                        </div>
+                        <h4 className="hidden md:block">Anonymous Guest</h4>
+                        <div className="hidden md:block px-4">
+                            <button className="btn btn-purple w-2/3 mx-auto block" onClick={() => setOpen(true)}>Sign In</button>
+                        </div>
+                    </div>
                     <div className="user-items">
                         <div className="user-img">
                             <img src={userBg} alt="User Background" />
@@ -112,7 +130,7 @@ const LeftMenu = () => {
                         <a href="#"><img src={search} alt="Search Icon" /></a>
                         <a href="#"><img src={plus} alt="Plus Icon" /></a>
                     </div>
-                    <ul>
+                    {/* <ul>
                         <li className="active flex items-center">
                             <a href="#" className="flex items-center">
                                 <img src={client1} alt="Client 1" />
@@ -181,18 +199,26 @@ const LeftMenu = () => {
                                 </div>
                             </div>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
-                <div className="client-search block md:hidden">
+                {/* <div className="client-search block md:hidden">
                     <ul className="flex flex-col justify-center items-center">
                         <li><a href="#"><img src={client1} alt="Client 1" /></a></li>
                         <li><a href="#"><img src={client2} alt="Client 2" /></a></li>
                         <li><a href="#"><img src={client3} alt="Client 3" /></a></li>
                         <li><a href="#"><img src={client2} alt="Client 4" /></a></li>
                     </ul>
+                </div> */}
+                <div className="mt-14">
+                    <img src={chatbotSmall} className='mx-auto hidden md:block' alt="" />
+                    <img src={ellipsePlus} className='mx-auto block md:hidden' alt="" />
+                    <p className='text-xl text-center mt-10 hidden md:block'>
+                        <span className="text-light-purple">Explore</span> to add more <br /> chatbots here
+                    </p>
                 </div>
             </div>
         </div>
+        <SigInModal show={open} setShow={setOpen} />
     </>
   )
 }

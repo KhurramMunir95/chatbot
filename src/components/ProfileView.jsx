@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { userBg2, followUser, share, user2, editProfile, editProfile2, calendar, link, upload, modalBanner, close } from '../utils/Images';
 import FollowerCard from '../components/FollowerCard';
+import PhotosModal from '../modals/PhotosModal';
+import DraftsModal from '../modals/DraftsModal';
 
 const ProfileView = () => {
-  return (
-    <>
+    const [openProfileModal, setOpenProfileModal] = useState(false);
+    const [openDraftsModal, setOpenDraftsModal] = useState(false);
+
+    return (
+        <>
         <div className="user-wrapperr">
             <img src={userBg2} alt="" />
             <div className="user-profile-position">
@@ -26,12 +31,14 @@ const ProfileView = () => {
                     <span><img src={calendar} alt="" />Joined Jun 2024</span>
                     <p>Passionate chatbot developer and digital artist with a unique blend of technical expertise and creative flair. With over 7 years of experience in... <a href="#">See More</a></p>
                     <div className="user-linkk-2">
-                        <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"><img src={editProfile} alt="" />Edit Profile</a>
-                        <a data-bs-toggle="modal" href="#exampleModalToggle2" role="button"><img src={link} alt="" />Drafts</a>
+                        <a data-bs-toggle="modal" href="#exampleModalToggle" role="button" onClick={() => setOpenProfileModal(true)}><img src={editProfile} alt="" />Edit Profile</a>
+                        <a data-bs-toggle="modal" href="#exampleModalToggle2" role="button" onClick={() => setOpenDraftsModal(true)}><img src={link} alt="" />Drafts</a>
                     </div>
                 </div>
             </div>
         </div>
+        <PhotosModal show={openProfileModal} setShow={setOpenProfileModal} />
+        <DraftsModal show={openDraftsModal} setShow={setOpenDraftsModal} />
     </>
   )
 }
