@@ -1,6 +1,14 @@
 {
   "homepage": "https://github.com/KhurramMunir95/chatbot",
   "name": "chatbot",
+  "keywords": [
+    "chatbot",
+    "react",
+    "vite",
+    "tailwindcss",
+    "react-router-dom"
+  ],
+  "author": "Khurram Munir",
   "private": true,
   "version": "0.0.0",
   "type": "module",
